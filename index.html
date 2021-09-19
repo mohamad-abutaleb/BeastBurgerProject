@@ -11,55 +11,67 @@
 </head>
 
 <body class="bg-warning">
-    <header>
-        <!-- Nav Bar -->
+    <!-- Start Header -->
+    <header class="container-fluid mb-5 p-0">
         <nav
-            class="navbar navbar-expand-lg navbar-light bg-warning border-bottom border-top border-2 border-danger">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+          class="navbar navbar-expand-lg navbar-dark d-flex"
+          style="background-color: #1c1a1b"
+        >
+          <div class="container d-flex justify-content-between">
+              <a href="#">
+            <img
+              src="/images/footer-logo.svg"
+              alt="Burgers Logo"
+              width="100px"
+              height="75px"
+              
+            />
+        </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarColor02"
+              aria-controls="navbarColor02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-5" id="navbarColor02">
+              <ul
+                class="mx-auto mb-2  navbar-nav me-auto mb-lg-0 d-flex align-items-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <div
+                class=" d-flex justify-content-between flex-column flex-lg-row align-items-center fs-4"
+                style="width: 200px"
+              >
+                <a href="#" class="text-light">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+                <button class="mb-2 mb-lg-0 btn btn-outline-light" type="button">
+                  Login
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <a class="navbar-brand" href="index.html"><img src="images/footer-logo.svg" alt=""
-                            class="w-25 rounded-2 d-lg-block d-none ps-2"></a>
-                    <ul class="navbar-nav mb-2 mb-lg-0  ms-auto me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" aria-current="page" href="#">
-                                <h4 class="fw-bolder me-4">Home</h4>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" href="#">
-                                <h4 class="fw-bolder me-4">Menu</h4>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger" href="#">
-                                <h4 class="fw-bolder me-4">About Us</h4>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <div class="d-flex align-self-center ms-auto ">
-                            <li class="nav-item">
-                                <a class="nav-link text-info" href="#">
-                                    <img src="/images/cart.jpg" alt="cart" class="mx-4">
-                                </a>
-                            </li>
-                            <li class=" nav-item me-3">
-                                <button class="bnt btn-danger text-warning rounded-1 fw-bold">Log In</button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="bnt btn-danger text-warning ms-2 rounded-1 fw-bold">Sign Up</button>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
+                <button class="btn btn-light" type="button">Sign up</button>
+              </div>
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
+      <!-- End Header -->
     <!-- Main Section -->
     <main class="container">
         <!-- Hero Banner Section -->
@@ -190,83 +202,126 @@
             </div>
         </section>
     </main>
-
-
-    <!-- Footer -->
-    <footer class="border-top bg-warning border-top border-bottom border-2 border-danger mt-5">
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-md-4 footer-column">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <span class="footer-title h4 text-danger">Navigate</span>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-danger fw-bold" href="#">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-danger fw-bold" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger  fw-bold" href="#">About Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 footer-column">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <span class="footer-title h4 text-danger">Info</span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger fw-bold" href="#">Email: Mrbeast@burger.com</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger fw-bold" href="#">Adress: Mecca St.,Amman,Jordan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-danger fw-bold" href="#">Number: 0772229002</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 footer-column">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a href="#"><img src="images/footer-logo.svg" alt="" class="w-25"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="text-center mt-4"><i class="fas fa-ellipsis-h"></i></div>
-
-            <div class="row text-center">
-                <div class="col-md-12 box">
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-twitter-square bg-warning"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <script src="https://kit.fontawesome.com/a7901331bb.js" crossorigin="anonymous"></script>
+ <!-- Start Footer  -->
+ <footer class="p-0 container-fluid" style="background-color: #2a2a2a">
+    <div
+      class="container py-5 mx-auto text-center text-white text-md-start row"
+    >
+      <div class="mb-3 col col-12 col-sm-6 col-md-3 fs-6">
+        <h5>Important Links</h5>
+        <hr
+          class="mx-auto text-danger mx-md-0"
+          style="height: 5px; width: 100px"
+        />
+        <ul class="mt-3 list-unstyled">
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none fw-light"
+              >About Us</a
+            >
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none fw-light"
+              >Our Blog</a
+            >
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none fw-light"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mb-3 col col-12 col-sm-6 col-md-3 fs-6">
+        <h5>Extras Links</h5>
+        <hr
+          class="mx-auto text-danger mx-md-0"
+          style="height: 5px; width: 100px"
+        />
+        <ul class="mt-3 list-unstyled">
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none fw-light"
+              >My Order</a
+            >
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none fw-light"
+              >Our Branches</a
+            >
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none fw-light"
+              >Privecy Policy</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mb-3 col col-12 col-sm-6 col-md-3 fs-6">
+        <h5>Contact Us</h5>
+        <hr
+          class="mx-auto text-danger mx-md-0"
+          style="height: 5px; width: 100px"
+        />
+        <ul class="mt-3 list-unstyled">
+          <li class="mb-2 text-white fw-light">
+            <i class="fas fa-clock me-2"></i><span>24/7</span>
+          </li>
+          <li class="mb-2 text-white fw-light">
+            <i class="fas fa-map-marker-alt me-2"></i
+            ><span>Amman, Jordan</span>
+          </li>
+          <li class="mb-2 text-white fw-light">
+            <i class="fas fa-phone me-2"></i><span>+962.6.5988333</span>
+          </li>
+          <li class="mb-2 text-white fw-light">
+            <i class="fas fa-envelope me-2"></i
+            ><span>info@BeastBurger.com</span>
+          </li>
+        </ul>
+      </div>
+      <div class="mb-3 col col-12 col-sm-6 col-md-3 fs-6">
+        <h5>Follow Us</h5>
+        <hr
+          class="mx-auto text-danger mx-md-0"
+          style="height: 5px; width: 100px"
+        />
+        <ul
+          class="mt-3  list-unstyled d-flex justify-content-md-start justify-content-center"
+        >
+          <li class="mb-2 me-3">
+            <a href="#" class="text-white text-decoration-none fs-3 fw-bolder"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li class="mb-2 me-3">
+            <a href="#" class="text-white text-decoration-none fs-3 fw-bolder"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="mb-2 me-3">
+            <a href="#" class="text-white text-decoration-none fs-3 fw-bolder"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none fs-3 fw-bolder"
+              ><i class="fab fa-telegram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="p-0" style="background-color: #1c1a1b">
+      <p class="py-2 mx-auto mb-0 text-center text-white fs-6 w-50">
+        MR.BEAST BURGER BY <span class="text-danger">ICON SOFTWARE</span> | ©
+        2021 All rights reserved!
+      </p>
+    </div>
+  </footer>
+  <!-- End Footer  -->
+  <script src="https://kit.fontawesome.com/a7901331bb.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
-    </footer>
-
 </body>
 
 </html>
